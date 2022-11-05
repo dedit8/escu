@@ -78,6 +78,14 @@ require 'defaultincludes.inc';
 require_once 'mrbs_sql.inc';
 require_once 'functions_mail.inc';
 
+$is_mandatory_field['entry.mail'] = true;
+$is_mandatory_field['entry.Nombre_de_quien_realiza_la_reserva'] = true;
+$is_mandatory_field['entry.Número_de_telefono'] = true;
+$is_mandatory_field['entry.Secretaría_o_área_que_reserva'] = true;
+$is_mandatory_field['entry.Nombre_del_Docente'] = true;
+
+
+
 $fields = db()->field_info(_tbl('entry'));
 $custom_fields = array();
 
@@ -141,11 +149,8 @@ function get_field_description($value, $disabled=false)
   $params = array('label'    => get_vocab('fulldescription'),
                   'name'     => 'description',
                   'field'    => 'entry.description',
-                  'value'    =>'
-Nombre de quien realiza la reserva[]
-Número de teléfono[]
-Secretaría o área que reserva[]
-Nombre del Docente[]',
+                    'required' => true,
+                  'value'    =>'',
                   'required' => !empty($is_mandatory_field['entry.description']),
                   'disabled' => $disabled);
 

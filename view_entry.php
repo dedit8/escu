@@ -892,7 +892,7 @@ if (!$room_disabled)
     // For the delete buttons, either the button is disabled and we show the reason why, or else
     // we add a click event to confirm the deletion
     unset($button_attributes['onclick']);
-    
+
     if (!$series)
     {
       echo "<div>\n";

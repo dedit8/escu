@@ -77,8 +77,22 @@ $db_persist = FALSE;
 /* Add lines from systemdefaults.inc.php and areadefaults.inc.php below here
    to change the default configuration. Do _NOT_ modify systemdefaults.inc.php
    or areadefaults.inc.php.  */
-
+   $auth["admin"][] = "dedit8";
 $auth["admin"][] = "dedit8";
 $auth["session"] = "php";
 $auth["type"] = "config";
+$auth["user"]["usu"] = "usu";
+$auth["user"]["usu1"] = "usu";
+$auth["user"]["usu2"] = "usu";
+$auth["user"]["usu3"] = "usu";
+$auth["user"]["usu4"] = "usu";
+$auth["user"]["usu5"] = "usu";
+$auth["user"]["usu6"] = "usu";
+$auth["user"]["usu7"] = "usu";
+$auth["user"]["usu8"] = "usu";
+$auth["user"]["usu9"] = "usu";
+
 $auth["user"]["dedit8"] = "dedit8";
+$mrbs_company = "DISTRICTO E";
+
+$mrbs_company_logo = "img1";

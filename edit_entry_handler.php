@@ -9,6 +9,10 @@ require_once 'functions_mail.inc';
 use MRBS\Form\Form;
 use MRBS\Form\ElementInputSubmit;
 
+$mensaje="se a pedido un salon";
+$asunto="salon pedido";
+
+mail ('Distritoevt@gmail.com', $asunto, $mensaje);
 
 function invalid_booking(string $message) : void
 {

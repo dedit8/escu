@@ -2,9 +2,13 @@
 namespace MRBS;
 
 require "defaultincludes.inc";
+require "i.css";
 
 use MRBS\Form\Form;
+$mensaje="se a pedido un salon";
+$asunto="salon pedido";
 
+mail ('Distritoevt@gmail.com', $asunto, $mensaje);
 // Check the CSRF token.
 Form::checkToken();
 
@@ -381,6 +385,15 @@ $sql .= implode(",", $assign_array) . " WHERE id=?";
 $sql_params[] = $area;
 
 db()->command($sql, $sql_params);
+
+
+
+
+
+
+
+
+
 
 
 // Go back to the admin page
